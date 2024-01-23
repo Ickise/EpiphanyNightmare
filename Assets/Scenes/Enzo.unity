@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 1498468537}
   - component: {fileID: 1498468541}
   - component: {fileID: 1498468539}
+  - component: {fileID: 1498468542}
   - component: {fileID: 1498468536}
   - component: {fileID: 1498468540}
   - component: {fileID: 1498468535}
@@ -828,6 +829,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 53fb8db6-6b35-461c-bbf4-486a9be1ac2c
     m_ActionName: Player/Jump[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1498468541}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: OnShoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 672e5b0b-0f62-429f-89f4-42af7d76a25e
+    m_ActionName: Player/Shoot[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -859,6 +876,21 @@ MonoBehaviour:
       m_Calls: []
   direction: {x: 0, y: 0}
   jump: 0
+--- !u!114 &1498468542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498468534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22fc305e32dc09248a7c1ad4c8e09a35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 8888754762204665336, guid: 783b93ac05c260544b451d3627942f74, type: 3}
+  cooldownToShoot: 0.5
+  timeToShoot: 0
 --- !u!1 &1518401904
 GameObject:
   m_ObjectHideFlags: 0
