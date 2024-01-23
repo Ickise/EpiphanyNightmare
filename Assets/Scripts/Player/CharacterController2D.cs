@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour
@@ -14,10 +13,12 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private float fallMultiplier = 3f;
     [SerializeField] private float lowJumpMultiplier = 2.5f;
     
-    private float hangTimeCounter;
+    [SerializeField] private float hangTimeCounter;
 
     private Vector2 playerVelocity;
 
+  [SerializeField]  private bool canJump = true;
+    
     private void Start()
     {
         InputReader._instance.onMoveEvent.AddListener(Movement);
@@ -27,6 +28,11 @@ public class CharacterController2D : MonoBehaviour
     private void Update()
     {
         CoyoteTime();
+
+        if (!InputReader._instance.jump)
+        {
+            canJump = true;
+        }
     }
 
     private void FixedUpdate()
@@ -34,18 +40,13 @@ public class CharacterController2D : MonoBehaviour
         SetGravity();
         ComputeGravity();
         
-        if (InputReader._instance.direction != Vector2.zero && _playerRaycastDetection.isGrounded)
+        if (InputReader._instance.direction != Vector2.zero)
         {
-            playerRigidbody2D.velocity = playerVelocity ;
+            playerRigidbody2D.velocity = playerVelocity;
         }
         else
         {
             playerRigidbody2D.velocity = new Vector2(InputReader._instance.direction.x, playerVelocity.y);
-        }
-
-        if (InputReader._instance.jump && _playerRaycastDetection.isGrounded)
-        {
-           // playerRigidbody2D.velocity = new Vector2(InputReader._instance.direction.x, playerVelocity.y);
         }
     }
 
@@ -56,9 +57,12 @@ public class CharacterController2D : MonoBehaviour
     
     private void Jump()
     {
-        hangTimeCounter = 0f;
-        playerVelocity.y = maxHeight;
-        //playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
+        if (hangTimeCounter >= 0 && _playerRaycastDetection.isGrounded && canJump)
+        {
+            canJump = false;
+            playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
+            hangTimeCounter = 0f;
+        }
     }
     
     private void CoyoteTime()
@@ -69,7 +73,7 @@ public class CharacterController2D : MonoBehaviour
     
     private void SetGravity()
     {
-        if (_playerRaycastDetection.isGrounded)
+        if (_playerRaycastDetection.isGrounded && !InputReader._instance.jump)
         {
             playerVelocity.y = 0;
         }
@@ -91,6 +95,7 @@ public class CharacterController2D : MonoBehaviour
 
         var factor = isFalling ? fallMultiplier : lowJumpMultiplier;
         playerVelocity += Vector2.up * (Physics2D.gravity.y * (factor - 1) * Time.deltaTime);
+        
+        InputReader._instance.jump = false;
     }
-
 }
