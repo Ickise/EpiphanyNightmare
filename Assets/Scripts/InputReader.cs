@@ -35,13 +35,15 @@ public class InputReader : MonoBehaviour
     
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.performed)
         {
+            Debug.Log("yo");
             jump = true;
             onJumpEvent.Invoke();
         }
         if(context.canceled)
         {
+            Debug.Log("bye");
             jump = false;
         }
     }

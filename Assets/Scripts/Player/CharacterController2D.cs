@@ -43,21 +43,22 @@ public class CharacterController2D : MonoBehaviour
             playerRigidbody2D.velocity = new Vector2(InputReader._instance.direction.x, playerVelocity.y);
         }
 
-        if (InputReader._instance.jump)
+        if (InputReader._instance.jump && _playerRaycastDetection.isGrounded)
         {
-            Jump();
+           // playerRigidbody2D.velocity = new Vector2(InputReader._instance.direction.x, playerVelocity.y);
         }
     }
 
     private void Movement()
     {
-        playerVelocity.x += InputReader._instance.direction.x * speed;
+        playerVelocity.x = InputReader._instance.direction.x * speed;
     }
     
     private void Jump()
     {
         hangTimeCounter = 0f;
-        playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
+        playerVelocity.y = maxHeight;
+        //playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
     }
     
     private void CoyoteTime()
