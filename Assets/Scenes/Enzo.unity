@@ -566,12 +566,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498468537}
+  - component: {fileID: 1498468541}
+  - component: {fileID: 1498468539}
   - component: {fileID: 1498468536}
+  - component: {fileID: 1498468540}
   - component: {fileID: 1498468535}
   - component: {fileID: 1498468538}
-  - component: {fileID: 1498468539}
-  - component: {fileID: 1498468540}
-  - component: {fileID: 1498468541}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -726,9 +726,11 @@ MonoBehaviour:
   speed: 5
   maxHeight: 3
   gravityFactor: 2
-  hangTime: 0.1
+  hangTime: 0.5
   fallMultiplier: 3
   lowJumpMultiplier: 2.5
+  hangTimeCounter: 0
+  canJump: 1
 --- !u!114 &1498468540
 MonoBehaviour:
   m_ObjectHideFlags: 0
