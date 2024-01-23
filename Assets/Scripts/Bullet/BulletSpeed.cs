@@ -2,24 +2,35 @@ using UnityEngine;
 
 public class BulletSpeed : MonoBehaviour
 {
-    [SerializeField] private float bulletSpeed = 5f;
-    [SerializeField] private float timeToDestoy = 5f;
+    [SerializeField] private float bulletSpeed = 15f;
+    [SerializeField] private float timeToDestroy = 2f;
+   
+    [SerializeField] private GameObject playerVisual;
 
     private Rigidbody2D bulletRigidbody2D;
 
-    private bool lookAtOriginalXPosition;
+    private bool lookAtOriginalYRotation;
+    
+    
 
     private void Awake()
     {
+        playerVisual = FindObjectOfType<SpriteFlip>().gameObject;
+        
         bulletRigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         
-        lookAtOriginalXPosition = InputReader._instance.direction.x >= 0;
+        lookAtOriginalYRotation = playerVisual.transform.rotation.y == 0;
         
-        Destroy(gameObject, timeToDestoy);
+        Destroy(gameObject, timeToDestroy);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        bulletRigidbody2D.velocity = lookAtOriginalXPosition ? transform.right * bulletSpeed : transform.right * -bulletSpeed;
+        BulletDirection();
+    }
+
+    private void BulletDirection()
+    {
+        bulletRigidbody2D.velocity = lookAtOriginalYRotation ? transform.right * bulletSpeed : transform.right * -bulletSpeed;
     }
 }
