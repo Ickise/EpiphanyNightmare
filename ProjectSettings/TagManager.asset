@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: CameraSortingLayer
+    uniqueID: 1674516199
+    locked: 0
