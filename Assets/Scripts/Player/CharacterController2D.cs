@@ -57,7 +57,7 @@ public class CharacterController2D : MonoBehaviour
     
     private void Jump()
     {
-        if (hangTimeCounter >= 0 && _playerRaycastDetection.isGrounded && canJump)
+        if (canJump && hangTimeCounter >= 0)
         {
             canJump = false;
             playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
