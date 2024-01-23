@@ -44,10 +44,10 @@ Material:
     - _DissolveAmount: 0
     - _DissolveScale: 30
     - _OutlineThickness: 0.06
-    - _SpiralStrength: 2
+    - _SpiralStrength: 3
     - _VerticalDissolve: 0
     m_Colors:
-    - _OutlineColor: {r: 0.7647059, g: 0.07843137, b: 0.08508222, a: 0}
+    - _OutlineColor: {r: 1.5294118, g: 0.15686274, b: 0.17016444, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7928238900596981236
 MonoBehaviour:
