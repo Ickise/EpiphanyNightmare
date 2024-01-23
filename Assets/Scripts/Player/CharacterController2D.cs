@@ -12,13 +12,13 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private float hangTime = 0.1f;
     [SerializeField] private float fallMultiplier = 3f;
     [SerializeField] private float lowJumpMultiplier = 2.5f;
-    
+
     [SerializeField] private float hangTimeCounter;
 
     private Vector2 playerVelocity;
 
-  [SerializeField]  private bool canJump = true;
-    
+    [SerializeField] private bool canJump = true;
+
     private void Start()
     {
         InputReader._instance.onMoveEvent.AddListener(Movement);
@@ -39,7 +39,7 @@ public class CharacterController2D : MonoBehaviour
     {
         SetGravity();
         ComputeGravity();
-        
+
         if (InputReader._instance.direction != Vector2.zero)
         {
             playerRigidbody2D.velocity = playerVelocity;
@@ -54,29 +54,29 @@ public class CharacterController2D : MonoBehaviour
     {
         playerVelocity.x = InputReader._instance.direction.x * speed;
     }
-    
+
     private void Jump()
     {
         if (canJump && hangTimeCounter >= 0)
         {
-            playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor); 
+            playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
+            hangTimeCounter = 0f;
             canJump = false;
         }
     }
-    
+
     private void CoyoteTime()
     {
-        if (_playerRaycastDetection.isGrounded)
+        if (_playerRaycastDetection.isGrounded && playerVelocity.y <= 0)
         {
             hangTimeCounter = hangTime;
         }
-        
         else
         {
             hangTimeCounter -= Time.deltaTime;
         }
     }
-    
+
     private void SetGravity()
     {
         if (_playerRaycastDetection.isGrounded && !InputReader._instance.jump)
@@ -88,7 +88,7 @@ public class CharacterController2D : MonoBehaviour
             playerVelocity.y += Physics2D.gravity.y * Time.deltaTime * gravityFactor;
         }
     }
-    
+
     private void ComputeGravity()
     {
         bool isFalling = playerVelocity.y < 0;
@@ -101,7 +101,7 @@ public class CharacterController2D : MonoBehaviour
 
         var factor = isFalling ? fallMultiplier : lowJumpMultiplier;
         playerVelocity += Vector2.up * (Physics2D.gravity.y * (factor - 1) * Time.deltaTime);
-        
+
         InputReader._instance.jump = false;
     }
 }
