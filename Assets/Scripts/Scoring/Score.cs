@@ -8,6 +8,7 @@ public class Score : MonoBehaviour
     private float timeToIncreaseScore = 2f;
     private float time;
 
+    [SerializeField] private int extraPoint = 1;
     public int scoreCounter;
 
     private void Update()
@@ -28,7 +29,7 @@ public class Score : MonoBehaviour
         if (time >= timeToIncreaseScore)
         {
             time = 0f;
-            scoreCounter += 1;
+            scoreCounter += extraPoint;
         }
     }
 }
