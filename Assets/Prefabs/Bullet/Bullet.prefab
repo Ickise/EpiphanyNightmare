@@ -63,6 +63,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _score: {fileID: 0}
+  _bloodParticles: {fileID: 8628892683653082384, guid: 265b1d57f9de3ab40a1cb98118d6bde3, type: 3}
 --- !u!212 &8642027688988395509
 SpriteRenderer:
   m_ObjectHideFlags: 0
