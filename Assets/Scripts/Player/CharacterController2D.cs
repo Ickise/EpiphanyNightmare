@@ -57,18 +57,24 @@ public class CharacterController2D : MonoBehaviour
     
     private void Jump()
     {
-        if (hangTimeCounter >= 0 && _playerRaycastDetection.isGrounded && canJump)
+        if (canJump && hangTimeCounter >= 0)
         {
+            playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor); 
             canJump = false;
-            playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
-            hangTimeCounter = 0f;
         }
     }
     
     private void CoyoteTime()
     {
-        if (_playerRaycastDetection.isGrounded) hangTimeCounter = hangTime;
-        else hangTimeCounter -= Time.deltaTime;
+        if (_playerRaycastDetection.isGrounded)
+        {
+            hangTimeCounter = hangTime;
+        }
+        
+        else
+        {
+            hangTimeCounter -= Time.deltaTime;
+        }
     }
     
     private void SetGravity()
