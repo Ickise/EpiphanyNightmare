@@ -22,6 +22,8 @@ public abstract class IA : MonoBehaviour
 
     [SerializeField] private bool drawCirclesEditor;
 
+    [SerializeField] private PolygonCollider2D polygonCollider2D;
+
     protected RaycastHit2D RaycastDetectNotVoid
     {
         get
@@ -80,11 +82,13 @@ public abstract class IA : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         enemyRigidbody2D = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        polygonCollider2D = GetComponent<PolygonCollider2D>();
     }
 
     protected virtual void Update()
     {
         if (!IsGrounded) return;
+        UpdateCollider2D.TryUpdateShapeToAttachedSprite(polygonCollider2D);
         StateManager();
         AtkPlayer();
     }
@@ -101,7 +105,7 @@ public abstract class IA : MonoBehaviour
     protected void RunToDirection()
     {
         enemyRigidbody2D.velocity = new Vector2(direction ? speed : -speed, enemyRigidbody2D.velocity.y);
-        enemySpriteRenderer.flipX = direction ? true : false;
+        enemySpriteRenderer.flipX = direction ? false : true;
     }
 
     void OnDrawGizmos()
