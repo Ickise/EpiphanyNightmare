@@ -743,8 +743,8 @@ MonoBehaviour:
   capsuleAngle: 0
   distanceToDetectEnemy: 0
   capsuleCastTransform: {fileID: 637525604650209251}
-  capsuleSize: {x: 50, y: 50}
-  force: {x: 500, y: 500}
+  capsuleSize: {x: 3, y: 3}
+  force: {x: 100, y: 100}
   layerEnemy:
     serializedVersion: 2
     m_Bits: 256
