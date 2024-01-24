@@ -14,10 +14,10 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private float lowJumpMultiplier = 2.5f;
 
     [SerializeField] private float hangTimeCounter;
-
-    private Vector2 playerVelocity;
-
+    
     [SerializeField] private bool canJump = true;
+    
+    private Vector2 playerVelocity;
 
     private void Start()
     {
