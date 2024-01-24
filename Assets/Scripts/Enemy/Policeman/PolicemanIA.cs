@@ -8,6 +8,7 @@ public class PolicemanIA : IA
 
     private void Walking()
     {
+
         if (RaycastHitWall || !RaycastDetectNotVoid)
             if (speed == walkingSpeed)
                 direction = !direction;
