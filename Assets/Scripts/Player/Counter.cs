@@ -11,6 +11,8 @@ public class Counter : MonoBehaviour
     [SerializeField] private Vector2 force = new Vector2(500, 500);
 
     [SerializeField] private LayerMask layerEnemy;
+    
+    [SerializeField] private ParticleSystem _bloodParticles;
 
     private float timeToCounter;
 
@@ -58,6 +60,8 @@ public class Counter : MonoBehaviour
     {
         if (_ia != null)
         {
+            Instantiate(_bloodParticles, _ia.transform.position, Quaternion.identity);
+
             enemyRigidbody2D = _ia.GetComponent<Rigidbody2D>();
             enemyCollider2D = _ia.GetComponent<Collider2D>();
 
