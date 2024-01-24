@@ -5,6 +5,7 @@ public class ImpactSomething : MonoBehaviour
     [SerializeField] private Score _score;
 
     [SerializeField] private ParticleSystem _bloodParticles;
+
     private ParticleSystem _bloodParticlesInstance;
 
     private void Awake()
@@ -15,14 +16,14 @@ public class ImpactSomething : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("IA"))
-            {
-                _score.scoreCounter += 10;
+        {
+            _score.scoreCounter += 10;
 
-                SpawnParticles();
+            SpawnParticles();
 
-                Destroy(other.gameObject);
-                Destroy(gameObject);
-            }
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
     }
 
     private void SpawnParticles()

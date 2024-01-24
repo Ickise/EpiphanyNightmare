@@ -5,7 +5,7 @@ public class Score : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI scoreText;
 
-    private float timeToIncreaseScore = 2f;
+    [SerializeField] private float timeToIncreaseScore = 2f;
     private float time;
 
     [SerializeField] private int extraPoint = 1;

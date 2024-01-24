@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2748763353366839455}
   - component: {fileID: 4248036691728945398}
   - component: {fileID: 4140724614751841936}
-  m_Layer: 0
+  - component: {fileID: 7253256395944175672}
+  m_Layer: 9
   m_Name: PlayerVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,6 +319,19 @@ PolygonCollider2D:
       - {x: 0.014285714, y: -2.097143}
       - {x: 0.014285714, y: -2.0342858}
   m_UseDelaunayMesh: 0
+--- !u!114 &7253256395944175672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165626174410034674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095571864abc8e646856547369cbf05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shockWaveTime: 0.75
 --- !u!1 &2623220840361474798
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,10 +399,9 @@ GameObject:
   - component: {fileID: 7636204497224293094}
   - component: {fileID: 8196888260541944776}
   - component: {fileID: 687216871315245991}
-  - component: {fileID: 3412656731785064395}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -616,19 +629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dissolveTime: 0.75
---- !u!114 &3412656731785064395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3273784487691894447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 095571864abc8e646856547369cbf05a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shockWaveTime: 0.75
 --- !u!1 &4934871242570468584
 GameObject:
   m_ObjectHideFlags: 0
