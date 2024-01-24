@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7253256395944175672}
   m_Layer: 9
   m_Name: PlayerVisual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,6 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5682569669304527102}
+  - {fileID: 637525604650209251}
   m_Father: {fileID: 3353515886009504017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2748763353366839455
@@ -160,8 +161,9 @@ PolygonCollider2D:
       - {x: -0.62, y: -0.5657143}
       - {x: -0.32285714, y: -0.56}
       - {x: -0.24285714, y: -0.5371429}
-      - {x: -0.17428571, y: -0.5142857}
-      - {x: -0.08857143, y: -0.47428572}
+      - {x: 0.12745875, y: -2.0594282}
+      - {x: 0.3380338, y: -1.5095836}
+      - {x: 0.61034584, y: -0.47737694}
       - {x: -0.02, y: -0.42285714}
       - {x: 0.048571426, y: -0.33714285}
       - {x: 0.07142857, y: -0.18857142}
@@ -191,9 +193,9 @@ PolygonCollider2D:
       - {x: 1.0542856, y: -0.06285714}
       - {x: 1.4771428, y: -0.057142857}
       - {x: 1.54, y: -0.034285713}
-      - {x: 1.6028571, y: 0.045714285}
-      - {x: 1.5799999, y: 0.15428571}
-      - {x: 1.6142857, y: 0.20571429}
+      - {x: 1.6682963, y: -0.054625604}
+      - {x: 1.7370548, y: 0.08884649}
+      - {x: 1.7800648, y: 0.18826395}
       - {x: 1.6657143, y: 0.25142857}
       - {x: 1.7514286, y: 0.28}
       - {x: 1.7685714, y: 0.30857143}
@@ -399,7 +401,7 @@ GameObject:
   - component: {fileID: 7636204497224293094}
   - component: {fileID: 8196888260541944776}
   - component: {fileID: 687216871315245991}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -584,6 +586,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 672e5b0b-0f62-429f-89f4-42af7d76a25e
     m_ActionName: Player/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7314352164656544979}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: OnCounter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e57a073e-8c94-439b-93f1-b409c59d99e8
+    m_ActionName: Player/Counter[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -676,6 +694,60 @@ MonoBehaviour:
   bullet: {fileID: 8888754762204665336, guid: 783b93ac05c260544b451d3627942f74, type: 3}
   cooldownToShoot: 0.5
   timeToShoot: 0
+--- !u!1 &6598992922704813033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637525604650209251}
+  - component: {fileID: 1847023866408099557}
+  m_Layer: 9
+  m_Name: Counter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &637525604650209251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598992922704813033}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.82, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 656488855505586197}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1847023866408099557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598992922704813033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00651084524e6304d980f0f63fe63049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterCooldown: 2
+  timeToDestroyEnemy: 3
+  capsuleAngle: 0
+  distanceToDetectEnemy: 0
+  capsuleCastTransform: {fileID: 637525604650209251}
+  capsuleSize: {x: 50, y: 50}
+  force: {x: 500, y: 500}
+  layerEnemy:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &7242168229942633467
 GameObject:
   m_ObjectHideFlags: 0
