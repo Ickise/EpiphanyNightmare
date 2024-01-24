@@ -4,9 +4,13 @@ public class ImpactSomething : MonoBehaviour
 {
     [SerializeField] private Score _score;
 
-    [SerializeField] private ParticleSystem _bloodParticles;
+    [SerializeField] private ParticleSystem _particles;
+    [SerializeField] private ParticleSystem _particles2;
+
 
     private ParticleSystem _bloodParticlesInstance;
+    private ParticleSystem _toxicParticlesInstance;
+
 
     private void Awake()
     {
@@ -28,6 +32,7 @@ public class ImpactSomething : MonoBehaviour
 
     private void SpawnParticles()
     {
-        _bloodParticlesInstance = Instantiate(_bloodParticles, transform.position, Quaternion.identity);
+        _bloodParticlesInstance = Instantiate(_particles, transform.position, Quaternion.identity);
+        _toxicParticlesInstance = Instantiate(_particles2, transform.position, Quaternion.identity);
     }
 }
