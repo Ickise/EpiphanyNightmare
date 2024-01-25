@@ -13,12 +13,7 @@ public class PolicemanSpawner : MonoBehaviour
     //[SerializeField] private int maxSpawnCount = 10;
 
     private float timer = 0f;
-
-    private void Start()
-    {
-        SpawnEnemies(initialSpawnCount);
-    }
-
+    
     private void Update()
     {
         timer += Time.deltaTime;
