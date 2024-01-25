@@ -1625,17 +1625,6 @@ MonoBehaviour:
   enemyNumberToIncrease: 0
   spawnRateIncrease: 0.1
   initialSpawnCount: 1
---- !u!114 &948834525 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7168175738335546769, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-  m_PrefabInstance: {fileID: 2006288449}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d4091a8e52dc6d4099a138815d1676f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &969314926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3353515886009504017, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
@@ -2296,31 +2285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1408427540 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 165626174410034674, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-  m_PrefabInstance: {fileID: 2006288449}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1408427543 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3324620635746558115, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-  m_PrefabInstance: {fileID: 2006288449}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1408427547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408427540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44cd0f1375a438e4e99345e6aeca74e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAnimator: {fileID: 1408427543}
-  _playerRaycastDetection: {fileID: 948834525}
-  intStatement: 0
 --- !u!1 &1477087956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3017,30 +2981,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 106730429}
     m_Modifications:
-    - target: {fileID: 637525604650209251, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 637525604650209251, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 637525604650209251, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 637525604650209251, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1847023866408099557, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
       propertyPath: _shockWaveManager
       value: 
       objectReference: {fileID: 1687377567}
-    - target: {fileID: 2748763353366839455, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 7103757d471bf7c408558f4d934c1b16, type: 3}
     - target: {fileID: 2748763353366839455, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -3093,17 +3037,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 8505216981682416408, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 165626174410034674, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1408427547}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
 --- !u!1001 &2050116086
 PrefabInstance:
