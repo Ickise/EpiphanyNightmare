@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   policemanSpawner: {fileID: 0}
+  deathPassivEnemy: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
 --- !u!95 &9103105124486539872
 Animator:
   serializedVersion: 5

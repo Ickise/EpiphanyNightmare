@@ -577,6 +577,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 1857957468}
@@ -1331,6 +1335,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 1341044444}
@@ -1449,6 +1457,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -2217,6 +2229,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 2134710424}
@@ -2944,6 +2960,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -3883,6 +3903,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 1036172909}
@@ -4236,6 +4260,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -5053,6 +5081,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 1228865570}
@@ -5525,6 +5557,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -115282,6 +115318,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 375939882}
@@ -115821,6 +115861,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -122491,6 +122535,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 1513599681}
@@ -122885,6 +122933,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 1480465330}
@@ -123053,6 +123105,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -123584,6 +123640,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -124383,6 +124443,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
       objectReference: {fileID: 889613907}
@@ -124686,6 +124750,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
@@ -124991,6 +125059,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: deathPassivEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
     - target: {fileID: 9035991112817613189, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: policemanSpawner
       value: 
