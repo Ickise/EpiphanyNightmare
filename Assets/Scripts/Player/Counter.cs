@@ -56,7 +56,7 @@ public class Counter : MonoBehaviour
 
             if (capsuleCastHitEnemy.collider != null)
             {
-                _ia = capsuleCastHitEnemy.collider.gameObject.GetComponent<IA>();
+                _ia = capsuleCastHitEnemy.collider.gameObject.GetComponentInParent<IA>();
             }
         }
     }
