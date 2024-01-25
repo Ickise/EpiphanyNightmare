@@ -5,7 +5,7 @@ public class Menu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("Lucas");
+        SceneManager.LoadScene("MAP");
     }
 
     public void Credit()

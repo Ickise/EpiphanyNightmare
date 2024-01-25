@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7aa60114354e5484fa54227e70050ac7
   - enabled: 1
-    path: Assets/Scenes/Lucas.unity
-    guid: acc16e95142f7d945a8268ca39a63864
-  - enabled: 0
-    path: Assets/Scenes/Enzo.unity
-    guid: b25d27d2f1aeb1943a0f4570153be670
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/MAP.unity
+    guid: 10c6fdcf786350847ba326d3b985a0c3
   m_configObjects: {}
