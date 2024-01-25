@@ -130,12 +130,12 @@ MonoBehaviour:
   speed: 2
   distanceToHitPlayer: 1
   speedToAttackPlayer: 6
-  walkingSpeed: 5
+  walkingSpeed: 3
   enemyHeight: {x: 1.6, y: 2}
   distanceToDetectPlayer: 100
   playerDetectionHeight: 100
   drawCirclesEditor: 0
-  polygonCollider2D: {fileID: 0}
+  _deathPlayer: {fileID: 0}
 --- !u!70 &5280387051088523670
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

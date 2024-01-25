@@ -2207,6 +2207,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687377565 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2310446441869121348, guid: 858b3e92157f69545b88b051861f5163, type: 3}
+  m_PrefabInstance: {fileID: 1456079955032965032}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095571864abc8e646856547369cbf05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1729792771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2437,6 +2448,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 106730429}
     m_Modifications:
+    - target: {fileID: 1847023866408099557, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
+      propertyPath: _shockWaveManager
+      value: 
+      objectReference: {fileID: 1687377565}
     - target: {fileID: 3273784487691894447, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
       propertyPath: m_Name
       value: Player
