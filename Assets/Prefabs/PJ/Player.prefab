@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7253256395944175672}
   - component: {fileID: 3324620635746558115}
   - component: {fileID: 8505216981682416408}
+  - component: {fileID: 483484461083513476}
   m_Layer: 9
   m_Name: PlayerVisual
   m_TagString: Player
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: a70ec64fde7e0e94fa5d623fa41289df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7103757d471bf7c408558f4d934c1b16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -171,9 +172,24 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1}
   m_Size: {x: 4, y: 7}
   m_Direction: 0
+--- !u!114 &483484461083513476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165626174410034674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44cd0f1375a438e4e99345e6aeca74e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 3324620635746558115}
+  _playerRaycastDetection: {fileID: 7168175738335546769}
+  intStatement: 0
 --- !u!1 &2623220840361474798
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,7 +599,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1867932395287493696}
-  - component: {fileID: 3312999142229672111}
   m_Layer: 9
   m_Name: Death
   m_TagString: Untagged
@@ -606,18 +621,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3353515886009504017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3312999142229672111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5819530210604044840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 381baabd36a2d094eab5e2166b0e0f8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6598992922704813033
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +703,7 @@ Transform:
   m_GameObject: {fileID: 7242168229942633467}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.95, y: -3.52, z: 0}
+  m_LocalPosition: {x: 0, y: -3.5, z: 0}
   m_LocalScale: {x: 1.2499999, y: 1.2499999, z: 1.2499999}
   m_ConstrainProportionsScale: 0
   m_Children: []
