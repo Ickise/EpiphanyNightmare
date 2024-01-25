@@ -13,6 +13,8 @@ public class InputReader : MonoBehaviour
     
     public bool jump;
 
+    public bool doCounterAnimation;
+
     public static InputReader _instance;
 
     private void Awake()

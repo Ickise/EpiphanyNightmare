@@ -5,15 +5,8 @@ public class PlayerAnimatorManager : MonoBehaviour
     [SerializeField] Animator playerAnimator;
 
     [SerializeField] private PlayerRaycastDetection _playerRaycastDetection;
-
-    [SerializeField] private PolygonCollider2D playerCollider2D;
-
+    
     [SerializeField] private int intStatement;
-
-    private void Start()
-    {
-        InputReader._instance.onCounterEvent.AddListener(CounterAnimation);
-    }
 
     private void Update()
     {
@@ -22,8 +15,6 @@ public class PlayerAnimatorManager : MonoBehaviour
 
     private void MakeTransition()
     {
-       // UpdateCollider2D.TryUpdateShapeToAttachedSprite(playerCollider2D);
-        
         if (_playerRaycastDetection.isGrounded && InputReader._instance.direction.x == 0 && !InputReader._instance.jump)
         {
             intStatement = 0;
@@ -41,14 +32,15 @@ public class PlayerAnimatorManager : MonoBehaviour
             intStatement = 2;
             SwitchIntStatement(intStatement);
         }
+
+        if (InputReader._instance.doCounterAnimation)
+        {
+            intStatement = 3;
+            SwitchIntStatement(intStatement);
+
+        }
     }
-    
-    private void CounterAnimation()
-    {
-        intStatement = 3;
-        SwitchIntStatement(intStatement);
-    }
-    
+
     private void SwitchIntStatement(int ID)
     {
         switch (ID)
@@ -67,5 +59,10 @@ public class PlayerAnimatorManager : MonoBehaviour
                 playerAnimator.SetInteger("State", 3);
                 break;
         }
+    }
+    
+    public void StopAnimation()
+    {
+        InputReader._instance.doCounterAnimation = false;
     }
 }

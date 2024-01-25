@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class ShockWaveManager : MonoBehaviour
 
     private Material _material;
 
+    private bool doShockWaveAnimation;
+
     private static int _waveDistanceFromCenter = Shader.PropertyToID("_WaveDistanceFromCenter");
 
     private void Awake()
@@ -16,9 +19,17 @@ public class ShockWaveManager : MonoBehaviour
         _material = GetComponent<SpriteRenderer>().material;
     }
 
+    private void Update()
+    {
+        CallShockWave();
+    }
+
     public void CallShockWave()
     {
-        _shockWaveCoroutine = StartCoroutine(ShockWaveAction(-0.1f, 1f));
+        if (doShockWaveAnimation)
+        {
+            _shockWaveCoroutine = StartCoroutine(ShockWaveAction(transform.position.x, 1f));
+        }
     }
 
     private IEnumerator ShockWaveAction(float startPos, float endPos)
@@ -37,5 +48,15 @@ public class ShockWaveManager : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void DoShockWave()
+    {
+        doShockWaveAnimation = true;
+    }
+    
+    public void StopShockWave()
+    {
+        doShockWaveAnimation = false;
     }
 }
