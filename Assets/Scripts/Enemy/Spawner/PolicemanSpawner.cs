@@ -10,7 +10,7 @@ public class PolicemanSpawner : MonoBehaviour
     [SerializeField] private float spawnRateIncrease = 0.1f;
     
     [SerializeField] private int initialSpawnCount = 1;
-    [SerializeField] private int maxSpawnCount = 10;
+    //[SerializeField] private int maxSpawnCount = 10;
 
     private float timer = 0f;
 

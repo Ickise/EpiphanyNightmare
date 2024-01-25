@@ -570,7 +570,6 @@ MonoBehaviour:
   enemyNumberToIncrease: 0
   spawnRateIncrease: 0.1
   initialSpawnCount: 1
-  maxSpawnCount: 10
 --- !u!1 &506032469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,7 +1384,6 @@ MonoBehaviour:
   enemyNumberToIncrease: 0
   spawnRateIncrease: 0.1
   initialSpawnCount: 1
-  maxSpawnCount: 10
 --- !u!4 &969314926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3353515886009504017, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
@@ -1790,7 +1788,6 @@ MonoBehaviour:
   enemyNumberToIncrease: 0
   spawnRateIncrease: 0.1
   initialSpawnCount: 1
-  maxSpawnCount: 10
 --- !u!1 &1173098820
 GameObject:
   m_ObjectHideFlags: 0
