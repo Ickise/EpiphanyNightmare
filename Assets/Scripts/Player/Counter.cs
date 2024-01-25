@@ -14,9 +14,11 @@ public class Counter : MonoBehaviour
     
     [SerializeField] private ParticleSystem _bloodParticles;
 
+    [SerializeField] private ShockWaveManager _shockWaveManager;
+
     private float timeToCounter;
 
-    private IA _ia;
+    [SerializeField] private IA _ia;
 
     private Rigidbody2D enemyRigidbody2D;
 
@@ -43,7 +45,9 @@ public class Counter : MonoBehaviour
     {
         if (timeToCounter >= counterCooldown)
         {
+            _shockWaveManager.CallShockWave();
             timeToCounter = 0;
+            
 
             capsuleCastHitEnemy = Physics2D.CapsuleCast(capsuleCastTransform.position, capsuleSize,
                 CapsuleDirection2D.Vertical,
@@ -51,6 +55,8 @@ public class Counter : MonoBehaviour
 
             if (capsuleCastHitEnemy.collider != null)
             {
+                Debug.Log("yo");
+
                 _ia = capsuleCastHitEnemy.collider.gameObject.GetComponent<IA>();
             }
         }

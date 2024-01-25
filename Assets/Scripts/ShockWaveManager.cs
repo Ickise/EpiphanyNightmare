@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class ShockWaveManager : MonoBehaviour
 {
@@ -16,14 +14,6 @@ public class ShockWaveManager : MonoBehaviour
     private void Awake()
     {
         _material = GetComponent<SpriteRenderer>().material;
-    }
-
-    private void Update()
-    {
-        if(Keyboard.current.rKey.wasPressedThisFrame)
-        {
-            CallShockWave();
-        }
     }
 
     public void CallShockWave()
