@@ -74,7 +74,7 @@ public abstract class IA : MonoBehaviour
         enemyHeight.x *= 0.7f;
         enemyHeight.y += 0.1f;
         speed = walkingSpeed;
-        layerGround = LayerMask.GetMask("Ground") | LayerMask.GetMask("IADontCollide");
+        layerGround = LayerMask.GetMask("Ground") | LayerMask.GetMask("IADontCollide") | LayerMask.GetMask("Wall");
         layerDetectPlayer = LayerMask.GetMask("Ground") | LayerMask.GetMask("Player") |
                             LayerMask.GetMask("IADontCollide");
         player = GameObject.FindGameObjectWithTag("Player").transform;

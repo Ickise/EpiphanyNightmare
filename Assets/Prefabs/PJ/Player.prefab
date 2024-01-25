@@ -38,6 +38,7 @@ Transform:
   - {fileID: 5682569669304527102}
   - {fileID: 637525604650209251}
   - {fileID: 60082741873562603}
+  - {fileID: 6727730384023851484}
   m_Father: {fileID: 3353515886009504017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2748763353366839455
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 38c476051ec0eb241a18cceb85b40bb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -202,8 +203,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6727730384023851484}
+  m_Children: []
   m_Father: {fileID: 3353515886009504017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7168175738335546769
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   capsuleCastGround: {fileID: 6727730384023851484}
   capsuleCastRight: {fileID: 60082741873562603}
-  capsuleSizeGround: {x: 3, y: 0.1}
+  capsuleSizeGround: {x: 1, y: 0.1}
   capsuleSizeWall: {x: 0.1, y: 1}
   capsuleAngle: 0
   distanceToDetectFloor: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
     m_Bits: 64
   layerWall:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 128
   isGrounded: 0
   touchWall: 0
 --- !u!1 &3273784487691894447
@@ -319,6 +319,7 @@ MonoBehaviour:
   lowJumpMultiplier: 2.5
   hangTimeCounter: 0
   canJump: 1
+  playerVelocity: {x: 0, y: 0}
 --- !u!114 &7636204497224293094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 4112893640178461447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.33, y: 0, z: 0}
+  m_LocalPosition: {x: 1.13, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -652,12 +653,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7242168229942633467}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.683, y: -3.802, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.95, y: -3.52, z: 0}
+  m_LocalScale: {x: 1.2499999, y: 1.2499999, z: 1.2499999}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4189655335628068846}
+  m_Father: {fileID: 656488855505586197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &228267278882913157
 PrefabInstance:
