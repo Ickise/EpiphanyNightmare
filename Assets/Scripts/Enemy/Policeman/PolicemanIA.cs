@@ -1,9 +1,5 @@
-using UnityEngine;
-
 public class PolicemanIA : IA
 {
-    [SerializeField] private PolicemanAnimationManager _policemanAnimationManager;
-
     protected override void StateManager()
     {
         Walking();
@@ -17,13 +13,13 @@ public class PolicemanIA : IA
             if (speed == walkingSpeed)
             {
                 direction = !direction;
-                _policemanAnimationManager.intStatement = 0;
-                _policemanAnimationManager.SwitchIntStatement(_policemanAnimationManager.intStatement);
             }
 
             else
                 return;
         }
+        _policemanAnimationManager.intStatement = 0;
+        _policemanAnimationManager.SwitchIntStatement(_policemanAnimationManager.intStatement);
         RunToDirection();
     }
 

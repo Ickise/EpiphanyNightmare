@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Trampoline : MonoBehaviour
@@ -7,32 +6,30 @@ public class Trampoline : MonoBehaviour
 
     [SerializeField] private CharacterController2D characterController2D;
 
-    [SerializeField] private bool doBounce;
+    private bool isPlayerOnTrampoline = false;
 
     private void FixedUpdate()
     {
-        DoBounce();
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        if (isPlayerOnTrampoline)
         {
-            doBounce = true;
+            DoBounce();
         }
     }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        doBounce = false;
-    }
-
+    
     private void DoBounce()
     {
-        if (doBounce)
+        characterController2D.playerVelocity = new Vector2(characterController2D.playerVelocity.x, bounceForce * Vector2.up.y);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
         {
-            characterController2D.playerVelocity = new Vector2(characterController2D.playerVelocity.x, 0f);
-            characterController2D.playerVelocity.y = bounceForce * Vector2.up.y;
+            isPlayerOnTrampoline = true;
         }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        isPlayerOnTrampoline = false;
     }
 }
