@@ -61,6 +61,7 @@ MonoBehaviour:
   - {fileID: 0}
   scoreText: {fileID: 0}
   newPositionScoreText: {fileID: 0}
+  deathMusic: {fileID: 8300000, guid: f299f8f7c3a8a494aa3753be017986e4, type: 3}
 --- !u!114 &752183853028545169
 MonoBehaviour:
   m_ObjectHideFlags: 0

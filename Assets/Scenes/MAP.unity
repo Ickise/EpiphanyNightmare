@@ -1629,10 +1629,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1864280614}
     - target: {fileID: 7468596995081489221, guid: 7a04143fd69605a4e9772a48e6a2ac36, type: 3}
-      propertyPath: deathMusic
-      value: 
-      objectReference: {fileID: 8300000, guid: f299f8f7c3a8a494aa3753be017986e4, type: 3}
-    - target: {fileID: 7468596995081489221, guid: 7a04143fd69605a4e9772a48e6a2ac36, type: 3}
       propertyPath: newPositionScoreText
       value: 
       objectReference: {fileID: 1611794336}
@@ -116095,7 +116091,7 @@ GameObject:
   - component: {fileID: 1500909251}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119747,7 +119743,7 @@ GameObject:
   - component: {fileID: 1694504235}
   m_Layer: 7
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

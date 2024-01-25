@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6183607250581618997}
   - component: {fileID: 8642027688988395509}
   - component: {fileID: 381241622002493608}
-  - component: {fileID: 4562776313855526162}
+  - component: {fileID: 6427366719044741207}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 15
   timeToDestroy: 2
+  bulletSpriteRenderer: {fileID: 8642027688988395509}
 --- !u!114 &6183607250581618997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,8 +146,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &4562776313855526162
-CircleCollider2D:
+--- !u!70 &6427366719044741207
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -178,5 +179,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Size: {x: 4, y: 1.92}
+  m_Direction: 1

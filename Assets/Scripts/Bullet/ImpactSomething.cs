@@ -33,6 +33,11 @@ public class ImpactSomething : MonoBehaviour
         {
             AudioManager._instance.PlaySFX(policemanDeath);
         }
+
+        if (other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void SpawnParticles()
