@@ -17,7 +17,7 @@ public class CharacterController2D : MonoBehaviour
     
     [SerializeField] private bool canJump = true;
     
-    private Vector2 playerVelocity;
+    public Vector2 playerVelocity;
 
     private void Start()
     {

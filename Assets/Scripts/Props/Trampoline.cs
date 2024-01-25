@@ -9,10 +9,13 @@ public class Trampoline : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Rigidbody2D playerRigidBody2D = collision.GetComponent<Rigidbody2D>();
+
+            CharacterController2D characterController2D = collision.GetComponent<CharacterController2D>();
+            
             if (playerRigidBody2D != null)
             {
-                playerRigidBody2D.velocity = new Vector2(playerRigidBody2D.velocity.x, 0f); // Réinitialise la vélocité en Y
-                playerRigidBody2D.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse); // Applique une force de rebondissement
+                characterController2D.playerVelocity = new Vector2(characterController2D.playerVelocity.x, 0f);
+                characterController2D.playerVelocity.y = bounceForce * Vector2.up.y;
             }
         }
     }
