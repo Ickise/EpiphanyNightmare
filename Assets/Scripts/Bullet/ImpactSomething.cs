@@ -19,7 +19,7 @@ public class ImpactSomething : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("IA"))
+        if (other.gameObject.CompareTag("IA") || other.gameObject.CompareTag("IADontCollide"))
         {
             _score.scoreCounter += 10;
 

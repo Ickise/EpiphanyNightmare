@@ -6,6 +6,7 @@ TagManager:
   tags:
   - IA
   - Bullet
+  - IADontCollide
   layers:
   - Default
   - TransparentFX
