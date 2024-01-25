@@ -1638,7 +1638,7 @@ PrefabInstance:
       objectReference: {fileID: 1611794336}
     - target: {fileID: 7468596995081489221, guid: 7a04143fd69605a4e9772a48e6a2ac36, type: 3}
       propertyPath: listToDisable.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7468596995081489221, guid: 7a04143fd69605a4e9772a48e6a2ac36, type: 3}
       propertyPath: listToEnable.Array.data[0]
@@ -1684,6 +1684,10 @@ PrefabInstance:
       propertyPath: listToDisable.Array.data[5]
       value: 
       objectReference: {fileID: 693740568}
+    - target: {fileID: 7468596995081489221, guid: 7a04143fd69605a4e9772a48e6a2ac36, type: 3}
+      propertyPath: listToDisable.Array.data[6]
+      value: 
+      objectReference: {fileID: 1477385566}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
