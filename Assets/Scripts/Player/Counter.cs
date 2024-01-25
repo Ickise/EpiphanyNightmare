@@ -45,18 +45,16 @@ public class Counter : MonoBehaviour
     {
         if (timeToCounter >= counterCooldown)
         {
-            _shockWaveManager.CallShockWave();
             timeToCounter = 0;
-            
+            InputReader._instance.doCounterAnimation = true;
 
+            
             capsuleCastHitEnemy = Physics2D.CapsuleCast(capsuleCastTransform.position, capsuleSize,
                 CapsuleDirection2D.Vertical,
                 capsuleAngle, Vector2.right, distanceToDetectEnemy, layerEnemy);
 
             if (capsuleCastHitEnemy.collider != null)
             {
-                Debug.Log("yo");
-
                 _ia = capsuleCastHitEnemy.collider.gameObject.GetComponent<IA>();
             }
         }
@@ -74,7 +72,7 @@ public class Counter : MonoBehaviour
             Destroy(_ia);
             enemyCollider2D.isTrigger = true;
             enemyRigidbody2D.velocity = transform.right * force;
-
+            
             Destroy(_ia.gameObject, timeToDestroyEnemy);
         }
     }
