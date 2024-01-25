@@ -21,8 +21,6 @@ public abstract class IA : MonoBehaviour
     [SerializeField] protected float playerDetectionHeight = 2f;
 
     [SerializeField] private bool drawCirclesEditor;
-
-    [SerializeField] private DeathPlayer _deathPlayer;
     
     protected RaycastHit2D RaycastDetectNotVoid
     {
@@ -80,7 +78,6 @@ public abstract class IA : MonoBehaviour
         layerDetectPlayer = LayerMask.GetMask("Ground") | LayerMask.GetMask("Player") |
                             LayerMask.GetMask("IADontCollide");
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        _deathPlayer = FindObjectOfType<DeathPlayer>();
         enemyRigidbody2D = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
@@ -89,7 +86,7 @@ public abstract class IA : MonoBehaviour
     {
         if (!IsGrounded) return;
         StateManager();
-        AtkPlayer();
+       // AtkPlayer();
     }
 
     protected abstract void StateManager();
@@ -98,13 +95,14 @@ public abstract class IA : MonoBehaviour
     {
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, player.position - transform.position,
             distanceToHitPlayer, layerDetectPlayer);
-        if (hit2D && hit2D.transform.CompareTag("Player")) _deathPlayer.OnDeath();
+        if (hit2D && hit2D.transform.CompareTag("Player")) return; // _deathPlayer.OnDeath();
     }
 
     protected void RunToDirection()
     {
         enemyRigidbody2D.velocity = new Vector2(direction ? speed : -speed, enemyRigidbody2D.velocity.y);
-        enemySpriteRenderer.flipX = direction ? false : true;
+      // enemySpriteRenderer.flipX = direction ? false : true;
+        enemyRigidbody2D.gameObject.transform.rotation = direction ? new Quaternion( enemyRigidbody2D.gameObject.transform.rotation.x, 0,  enemyRigidbody2D.gameObject.transform.rotation.z, 0) :  new Quaternion( enemyRigidbody2D.gameObject.transform.rotation.x, 180,  enemyRigidbody2D.gameObject.transform.rotation.z, 0);
     }
 
     void OnDrawGizmos()
