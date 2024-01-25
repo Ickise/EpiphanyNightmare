@@ -18,8 +18,6 @@ public class PolicemanIA : IA
             else
                 return;
         }
-        _policemanAnimationManager.intStatement = 0;
-        _policemanAnimationManager.SwitchIntStatement(_policemanAnimationManager.intStatement);
         RunToDirection();
     }
 
@@ -29,8 +27,6 @@ public class PolicemanIA : IA
         {
             direction = transform.position.x < player.position.x;
             speed = speedToAttackPlayer;
-            _policemanAnimationManager.intStatement = 0;
-            _policemanAnimationManager.SwitchIntStatement(_policemanAnimationManager.intStatement);
         }
         else
             speed = walkingSpeed;

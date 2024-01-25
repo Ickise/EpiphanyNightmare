@@ -21,9 +21,7 @@ public abstract class IA : MonoBehaviour
     [SerializeField] protected float playerDetectionHeight = 2f;
 
     [SerializeField] private bool drawCirclesEditor;
-
-    [SerializeField] protected PolicemanAnimationManager _policemanAnimationManager;
-
+    
     protected RaycastHit2D RaycastDetectNotVoid
     {
         get
@@ -82,7 +80,6 @@ public abstract class IA : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         enemyRigidbody2D = GetComponent<Rigidbody2D>();
         enemySpriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        _policemanAnimationManager = GetComponentInParent<PolicemanAnimationManager>();
     }
 
     protected virtual void Update()
