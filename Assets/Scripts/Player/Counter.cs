@@ -15,6 +15,8 @@ public class Counter : MonoBehaviour
     [SerializeField] private ParticleSystem _bloodParticles;
 
     [SerializeField] private ShockWaveManager _shockWaveManager;
+    
+    [SerializeField] private AudioClip expulseIa;
 
     private float timeToCounter;
 
@@ -65,6 +67,7 @@ public class Counter : MonoBehaviour
     {
         if (_ia != null)
         {
+            AudioManager._instance.PlaySFX(expulseIa);
             Instantiate(_bloodParticles, _ia.transform.position, Quaternion.identity);
 
             enemyRigidbody2D = _ia.GetComponent<Rigidbody2D>();

@@ -16,6 +16,8 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private float hangTimeCounter;
     
     [SerializeField] private bool canJump = true;
+
+    [SerializeField] private AudioClip[] jumpSoundList;
     
     public Vector2 playerVelocity;
 
@@ -60,6 +62,7 @@ public class CharacterController2D : MonoBehaviour
     {
         if (canJump && hangTimeCounter >= 0)
         {
+            AudioManager._instance.PlayRandomSound(jumpSoundList);
             playerVelocity.y = Mathf.Sqrt(-2 * maxHeight * Physics2D.gravity.y * gravityFactor);
             hangTimeCounter = 0f;
             canJump = false;

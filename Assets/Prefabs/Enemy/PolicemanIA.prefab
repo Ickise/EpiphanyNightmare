@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65bb4c327c951e4498766f590c980691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listDeathPlayerSound:
+  - {fileID: 8300000, guid: 340705e3dafc6a04a8843c1f1148e1c4, type: 3}
+  - {fileID: 8300000, guid: 72cae40bbcafc9d42b1330044b467ee3, type: 3}
 --- !u!60 &97885084291176488
 PolygonCollider2D:
   m_ObjectHideFlags: 0

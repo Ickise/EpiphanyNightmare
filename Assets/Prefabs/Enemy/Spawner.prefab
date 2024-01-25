@@ -49,4 +49,4 @@ MonoBehaviour:
   enemyNumberToIncrease: 0
   spawnRateIncrease: 0.1
   initialSpawnCount: 1
-  maxSpawnCount: 10
+  policemanSpawn: {fileID: 8300000, guid: 85d2f70780c7d6b4c8c2acf0b389fcab, type: 3}

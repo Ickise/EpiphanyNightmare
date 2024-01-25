@@ -15,4 +15,11 @@ public class AudioManager : MonoBehaviour
     {
         _audioSource.PlayOneShot(clipToPlay);
     }
+    
+    public void PlayRandomSound(AudioClip[] listOfRandomSound)
+    {
+        AudioClip randomClip = listOfRandomSound[Random.Range(0, listOfRandomSound.Length)];
+
+        _audioSource.PlayOneShot(randomClip);
+    }
 }

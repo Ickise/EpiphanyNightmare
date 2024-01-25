@@ -4,6 +4,8 @@ public class BoneAttack : MonoBehaviour
 {
     private DeathPlayer _deathPlayer;
 
+    [SerializeField] private AudioClip[] listDeathPlayerSound;
+
     private void Awake()
     {
         _deathPlayer = FindObjectOfType<DeathPlayer>();
@@ -13,6 +15,7 @@ public class BoneAttack : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioManager._instance.PlayRandomSound(listDeathPlayerSound);
             _deathPlayer.OnDeath();
         }
     }

@@ -7,11 +7,11 @@ public class ImpactSomething : MonoBehaviour
     [SerializeField] private ParticleSystem _particles;
     [SerializeField] private ParticleSystem _particles2;
 
-
+    [SerializeField] private AudioClip policemanDeath;
+    
     private ParticleSystem _bloodParticlesInstance;
     private ParticleSystem _toxicParticlesInstance;
-
-
+    
     private void Awake()
     {
         _score = FindObjectOfType<Score>();
@@ -27,6 +27,11 @@ public class ImpactSomething : MonoBehaviour
 
             Destroy(other.gameObject);
             Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag(("IA")))
+        {
+            AudioManager._instance.PlaySFX(policemanDeath);
         }
     }
 

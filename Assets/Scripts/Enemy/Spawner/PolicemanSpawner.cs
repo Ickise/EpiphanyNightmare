@@ -10,8 +10,9 @@ public class PolicemanSpawner : MonoBehaviour
     [SerializeField] private float spawnRateIncrease = 0.1f;
     
     [SerializeField] private int initialSpawnCount = 1;
-    //[SerializeField] private int maxSpawnCount = 10;
 
+    [SerializeField] private AudioClip policemanSpawn;
+    
     private float timer = 0f;
     
     private void Update()
@@ -25,6 +26,7 @@ public class PolicemanSpawner : MonoBehaviour
     {
         if (timer >= spawnInterval)
         {
+            AudioManager._instance.PlaySFX(policemanSpawn);
             enemyNumberToIncrease += spawnRateIncrease;
 
             int numberOfEnemiesToSpawn = initialSpawnCount + Mathf.FloorToInt(enemyNumberToIncrease);

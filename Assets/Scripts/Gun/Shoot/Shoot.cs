@@ -8,6 +8,8 @@ public class Shoot : MonoBehaviour
     [SerializeField] private float cooldownToShoot = 0.5f;
     [SerializeField] private float timeToShoot = 0f;
 
+    [SerializeField] private AudioClip shootAudio;
+    
     private void Start()
     {
         InputReader._instance.onShootEvent.AddListener(ShootBullet);
@@ -22,6 +24,7 @@ public class Shoot : MonoBehaviour
     {
         if (timeToShoot >= cooldownToShoot)
         {
+            AudioManager._instance.PlaySFX(shootAudio);
             Instantiate(bullet, transform.position, quaternion.identity);
             timeToShoot = 0f;
         }

@@ -8,6 +8,7 @@ public class InputReader : MonoBehaviour
     public UnityEvent onJumpEvent = new UnityEvent();
     public UnityEvent onShootEvent = new UnityEvent();
     public UnityEvent onCounterEvent = new UnityEvent();
+    public UnityEvent onRandomThingsEvent = new UnityEvent();
 
     public Vector2 direction;
     
@@ -61,6 +62,14 @@ public class InputReader : MonoBehaviour
         if (context.started)
         {
             onCounterEvent.Invoke();
+        }
+    }
+
+    public void OnRandomThings(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            onRandomThingsEvent.Invoke();
         }
     }
 }

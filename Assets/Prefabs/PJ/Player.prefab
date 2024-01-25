@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 1631772388031251147}
   - component: {fileID: 7636204497224293094}
   - component: {fileID: 8196888260541944776}
-  - component: {fileID: 687216871315245991}
+  - component: {fileID: 1876148793254484191}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -312,6 +312,9 @@ MonoBehaviour:
   onCounterEvent:
     m_PersistentCalls:
       m_Calls: []
+  onRandomThingsEvent:
+    m_PersistentCalls:
+      m_Calls: []
   direction: {x: 0, y: 0}
   jump: 0
   doCounterAnimation: 0
@@ -337,6 +340,10 @@ MonoBehaviour:
   lowJumpMultiplier: 2.5
   hangTimeCounter: 0
   canJump: 1
+  jumpSoundList:
+  - {fileID: 8300000, guid: c238439844527ce458ca354b0204efd8, type: 3}
+  - {fileID: 8300000, guid: d10c909e5d1231641b5a42e3ef4c8c52, type: 3}
+  - {fileID: 8300000, guid: ae66b71ded09b7f4993e9937e18fda06, type: 3}
   playerVelocity: {x: 0, y: 0}
 --- !u!114 &7636204497224293094
 MonoBehaviour:
@@ -467,6 +474,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e57a073e-8c94-439b-93f1-b409c59d99e8
     m_ActionName: Player/Counter[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7314352164656544979}
+        m_TargetAssemblyTypeName: InputReader, Assembly-CSharp
+        m_MethodName: OnRandomThings
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 68ac6846-a919-4c90-b470-df9fc6d4483a
+    m_ActionName: Player/RandomThings
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -499,7 +522,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &687216871315245991
+--- !u!114 &1876148793254484191
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -508,10 +531,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3273784487691894447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d81d6140b6fabe4faa4ff05e5a76ff7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cc522912be649844b2fff21c33a865d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dissolveTime: 0.75
+  randomSoundsList:
+  - {fileID: 8300000, guid: a2233cb57c372cc4391c212f09c1ca90, type: 3}
+  - {fileID: 8300000, guid: 047d10ada30aa314991d2f5bff2603e3, type: 3}
+  - {fileID: 8300000, guid: 29818435140b4414c8152e8e1ebc66e9, type: 3}
+  - {fileID: 8300000, guid: 9f63b64d589f9ae428041afa30ff8538, type: 3}
 --- !u!1 &4112893640178461447
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +617,7 @@ MonoBehaviour:
   bullet: {fileID: 8888754762204665336, guid: 783b93ac05c260544b451d3627942f74, type: 3}
   cooldownToShoot: 0.5
   timeToShoot: 0
+  shootAudio: {fileID: 8300000, guid: cfdf3cd21229575429825d694f69c818, type: 3}
 --- !u!1 &5819530210604044840
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +705,7 @@ MonoBehaviour:
     m_Bits: 256
   _bloodParticles: {fileID: 8628892683653082384, guid: 265b1d57f9de3ab40a1cb98118d6bde3, type: 3}
   _shockWaveManager: {fileID: 0}
+  expulseIa: {fileID: 8300000, guid: 06c2af507bf6ecd4daa36826e08dbb83, type: 3}
   _ia: {fileID: 0}
 --- !u!1 &7242168229942633467
 GameObject:

@@ -65,6 +65,7 @@ MonoBehaviour:
   _score: {fileID: 0}
   _particles: {fileID: 8628892683653082384, guid: 265b1d57f9de3ab40a1cb98118d6bde3, type: 3}
   _particles2: {fileID: 8628892683653082384, guid: a4bbfe02a230a364ea7c7cb63feced6d, type: 3}
+  policemanDeath: {fileID: 8300000, guid: 89e87848ac4955a40927c2c41c1c3b7f, type: 3}
 --- !u!212 &8642027688988395509
 SpriteRenderer:
   m_ObjectHideFlags: 0

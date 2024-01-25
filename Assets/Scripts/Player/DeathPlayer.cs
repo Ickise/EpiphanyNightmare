@@ -11,6 +11,8 @@ public class DeathPlayer : MonoBehaviour
 
     [SerializeField] private Transform newPositionScoreText;
 
+    [SerializeField] private AudioClip deathMusic;
+
     public void OnDeath()
     {
         foreach (var gameObject in listToEnable)
@@ -22,7 +24,8 @@ public class DeathPlayer : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-
+        
+        AudioManager._instance.PlaySFX(deathMusic);
         scoreText.gameObject.transform.position = newPositionScoreText.position;
     }
 }
