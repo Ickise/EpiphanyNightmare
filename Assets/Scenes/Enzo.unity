@@ -236,6 +236,56 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &141120555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 141120557}
+  - component: {fileID: 141120556}
+  m_Layer: 0
+  m_Name: Spwaner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &141120556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141120555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0338b77ab95dff041aef2a991d9234e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 938969843}
+  spawnInterval: 5
+  enemyNumberToIncrease: 0
+  spawnRateIncrease: 0.1
+  initialSpawnCount: 1
+  maxSpawnCount: 10
+--- !u!4 &141120557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141120555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 8.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &308180373
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,6 +899,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625666875}
   m_CullTransparentMesh: 1
+--- !u!1 &938969843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4798043480082571897, guid: e6f259c09e9df914abced1ede58e4d58, type: 3}
+  m_PrefabInstance: {fileID: 4316033090765926066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1142857688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,11 +934,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3353515886009504017, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.55
+      value: -19.02
       objectReference: {fileID: 0}
     - target: {fileID: 3353515886009504017, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.52
+      value: 9.96
       objectReference: {fileID: 0}
     - target: {fileID: 3353515886009504017, guid: 5253d9fd79e82e84394fbcbff2a48930, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2407,11 +2462,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3011193824675879393, guid: e6f259c09e9df914abced1ede58e4d58, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.33
+      value: -46.45
       objectReference: {fileID: 0}
     - target: {fileID: 3011193824675879393, guid: e6f259c09e9df914abced1ede58e4d58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.09
+      value: 6.46
       objectReference: {fileID: 0}
     - target: {fileID: 3011193824675879393, guid: e6f259c09e9df914abced1ede58e4d58, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2449,6 +2504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PolicemanIA
       objectReference: {fileID: 0}
+    - target: {fileID: 4798043480082571897, guid: e6f259c09e9df914abced1ede58e4d58, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2466,3 +2525,4 @@ SceneRoots:
   - {fileID: 1846208493}
   - {fileID: 4316033090765926066}
   - {fileID: 1142857688}
+  - {fileID: 141120557}
