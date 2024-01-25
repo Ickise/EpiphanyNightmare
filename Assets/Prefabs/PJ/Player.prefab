@@ -227,7 +227,7 @@ MonoBehaviour:
   distanceToDetectWall: 0
   layerGround:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   layerWall:
     serializedVersion: 2
     m_Bits: 128
