@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3274442555339854940}
   - component: {fileID: 8786620592374543019}
-  - component: {fileID: 7655278164189091868}
+  - component: {fileID: 97885084291176488}
   m_Layer: 8
   m_Name: BoneCollider
   m_TagString: Untagged
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65bb4c327c951e4498766f590c980691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &7655278164189091868
-BoxCollider2D:
+--- !u!60 &97885084291176488
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -77,7 +77,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.050409794, y: 0.1596331}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -87,9 +87,30 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4704947, y: 3.5373168}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.094581395, y: 0.63247395}
+      - {x: -0.013592094, y: 1.1356574}
+      - {x: 0.2868538, y: 1.2449408}
+      - {x: 0.20712033, y: 1.5328381}
+      - {x: -0.12071879, y: 1.6091937}
+      - {x: -0.35837504, y: 1.7167511}
+      - {x: -0.59265184, y: 1.6683284}
+      - {x: -0.9133948, y: 1.3894014}
+      - {x: -0.8401472, y: 1.1436906}
+      - {x: -0.58122605, y: 1.0120878}
+      - {x: -0.4258858, y: 0.94408023}
+      - {x: -0.4777894, y: 0.25440928}
+      - {x: -0.47856915, y: -0.79081476}
+      - {x: -0.41387624, y: -1.0132452}
+      - {x: -0.535926, y: -1.2501419}
+      - {x: -0.5528705, y: -1.4355265}
+      - {x: -0.41697535, y: -1.4212095}
+      - {x: -0.20472126, y: -1.4916428}
+      - {x: -0.03321156, y: -1.4588201}
+      - {x: 0.023506641, y: -1.2731818}
+      - {x: -0.07406366, y: -0.07436156}
+  m_UseDelaunayMesh: 0
 --- !u!1 &4798043480082571897
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,6 +124,8 @@ GameObject:
   - component: {fileID: 7905645209201793768}
   - component: {fileID: 8659738881085699805}
   - component: {fileID: 5280387051088523670}
+  - component: {fileID: 5180398037882780315}
+  - component: {fileID: 8071508512276135411}
   m_Layer: 8
   m_Name: PolicemanIA
   m_TagString: IA
@@ -226,6 +249,7 @@ MonoBehaviour:
   distanceToDetectPlayer: 100
   playerDetectionHeight: 100
   drawCirclesEditor: 0
+  _policemanAnimationManager: {fileID: 8071508512276135411}
 --- !u!70 &5280387051088523670
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -261,3 +285,38 @@ CapsuleCollider2D:
   m_Offset: {x: 0.2, y: 0.33}
   m_Size: {x: 3, y: 7}
   m_Direction: 0
+--- !u!95 &5180398037882780315
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798043480082571897}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 65ae0e50ffbc537479185dbf0a680df6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8071508512276135411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4798043480082571897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0dcc9ff81e5dd843976223107d8ca4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  policemanAnimator: {fileID: 5180398037882780315}
+  intStatement: 0

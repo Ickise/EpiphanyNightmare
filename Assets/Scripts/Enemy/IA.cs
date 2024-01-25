@@ -86,7 +86,7 @@ public abstract class IA : MonoBehaviour
     {
         if (!IsGrounded) return;
         StateManager();
-       // AtkPlayer();
+        //AtkPlayer();
     }
 
     protected abstract void StateManager();
@@ -95,14 +95,19 @@ public abstract class IA : MonoBehaviour
     {
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, player.position - transform.position,
             distanceToHitPlayer, layerDetectPlayer);
-        if (hit2D && hit2D.transform.CompareTag("Player")) return; // _deathPlayer.OnDeath();
+      //  if (hit2D && hit2D.transform.CompareTag("Player")) _deathPlayer.OnDeath();
+      
     }
 
     protected void RunToDirection()
     {
         enemyRigidbody2D.velocity = new Vector2(direction ? speed : -speed, enemyRigidbody2D.velocity.y);
-      // enemySpriteRenderer.flipX = direction ? false : true;
-        enemyRigidbody2D.gameObject.transform.rotation = direction ? new Quaternion( enemyRigidbody2D.gameObject.transform.rotation.x, 0,  enemyRigidbody2D.gameObject.transform.rotation.z, 0) :  new Quaternion( enemyRigidbody2D.gameObject.transform.rotation.x, 180,  enemyRigidbody2D.gameObject.transform.rotation.z, 0);
+        // enemySpriteRenderer.flipX = direction ? false : true;
+        enemyRigidbody2D.gameObject.transform.rotation = direction
+            ? new Quaternion(enemyRigidbody2D.gameObject.transform.rotation.x, 0,
+                enemyRigidbody2D.gameObject.transform.rotation.z, 0)
+            : new Quaternion(enemyRigidbody2D.gameObject.transform.rotation.x, 180,
+                enemyRigidbody2D.gameObject.transform.rotation.z, 0);
     }
 
     void OnDrawGizmos()
