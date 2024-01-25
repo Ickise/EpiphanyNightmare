@@ -18,18 +18,10 @@ public class ShockWaveManager : MonoBehaviour
     {
         _material = GetComponent<SpriteRenderer>().material;
     }
-
-    private void Update()
-    {
-        CallShockWave();
-    }
-
+    
     public void CallShockWave()
     {
-        if (doShockWaveAnimation)
-        {
-            _shockWaveCoroutine = StartCoroutine(ShockWaveAction(transform.position.x, 1f));
-        }
+        _shockWaveCoroutine = StartCoroutine(ShockWaveAction(-0.1f, 1f));
     }
 
     private IEnumerator ShockWaveAction(float startPos, float endPos)
@@ -52,11 +44,11 @@ public class ShockWaveManager : MonoBehaviour
 
     public void DoShockWave()
     {
-        doShockWaveAnimation = true;
+        StartCoroutine(ShockWaveAction(-0.1f, 1f));
     }
     
     public void StopShockWave()
     {
-        doShockWaveAnimation = false;
+        StopAllCoroutines();
     }
 }

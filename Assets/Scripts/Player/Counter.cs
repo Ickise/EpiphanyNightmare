@@ -45,6 +45,7 @@ public class Counter : MonoBehaviour
     {
         if (timeToCounter >= counterCooldown)
         {
+            _shockWaveManager.CallShockWave();
             timeToCounter = 0;
             InputReader._instance.doCounterAnimation = true;
 
