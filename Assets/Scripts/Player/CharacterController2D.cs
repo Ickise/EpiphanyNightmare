@@ -40,13 +40,14 @@ public class CharacterController2D : MonoBehaviour
         SetGravity();
         ComputeGravity();
 
-        if (InputReader._instance.direction != Vector2.zero)
+        if (InputReader._instance.direction != Vector2.zero && !_playerRaycastDetection.touchWall)
         {
             playerRigidbody2D.velocity = playerVelocity;
         }
         else
         {
-            playerRigidbody2D.velocity = new Vector2(InputReader._instance.direction.x, playerVelocity.y);
+            playerVelocity.x = 0;
+            playerRigidbody2D.velocity = playerVelocity;
         }
     }
 
