@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5824940669832672448}
   - component: {fileID: 9035991112817613189}
   - component: {fileID: 9103105124486539872}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: PassivEnemy
-  m_TagString: IA
+  m_TagString: IADontCollide
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

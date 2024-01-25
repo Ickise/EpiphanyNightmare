@@ -516,6 +516,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 89.13
@@ -1262,6 +1270,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.16
@@ -1372,6 +1388,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2132,6 +2156,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 60.54
@@ -2851,6 +2883,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3782,6 +3822,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 83.76
@@ -4127,6 +4175,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4936,6 +4992,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.01
@@ -5400,6 +5464,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -115149,6 +115221,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.72
@@ -115680,6 +115760,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -122342,6 +122430,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 71.07
@@ -122728,6 +122824,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.93
@@ -122888,6 +122992,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -123411,6 +123523,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -124202,6 +124322,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PassivEnemy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
+      objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 56.67
@@ -124497,6 +124625,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -124794,6 +124930,14 @@ PrefabInstance:
     - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_Name
       value: PassivEnemy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1208244948696328677, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
+      propertyPath: m_TagString
+      value: IADontCollide
       objectReference: {fileID: 0}
     - target: {fileID: 1363331241915764202, guid: 3bf7ee41916c3d84796005cbb1bfd68d, type: 3}
       propertyPath: m_LocalPosition.x
