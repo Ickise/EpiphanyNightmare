@@ -1106,7 +1106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRendererMenu: {fileID: 545774015}
   loreSprite: {fileID: 21300000, guid: 37ca9b50a4331724180c08d0d825f7ff, type: 3}
-  intputExplanation: {fileID: 21300000, guid: 826a0dc7343b4564397eba027ac9a5f0, type: 3}
+  intputExplanation: {fileID: 21300000, guid: 805f128b9b3ad294682faf10930950db, type: 3}
   videoPlayer: {fileID: 619842457}
   continueToGame: {fileID: 775458915}
   continueToInputExplanation: {fileID: 1522789501}
