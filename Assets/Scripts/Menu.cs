@@ -58,9 +58,4 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-
-    private void ListToEnableOrDisable(GameObject[] listObjects, bool isEnable)
-    {
-       
-    }
 }
