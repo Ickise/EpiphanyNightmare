@@ -6,11 +6,11 @@ public class Menu : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRendererMenu;
 
-    [SerializeField] private Sprite loreSprite;
+    [SerializeField] private Sprite loreSprite, intputExplanation;
     
     [SerializeField] private VideoPlayer videoPlayer;
 
-    [SerializeField] private GameObject continueToGame;
+    [SerializeField] private GameObject continueToGame, continueToInputExplanation;
 
     [SerializeField] private GameObject goToMenu;
 
@@ -19,12 +19,19 @@ public class Menu : MonoBehaviour
     public void LoreExplanation()
     {
         spriteRendererMenu.sprite = loreSprite;
-        continueToGame.SetActive(true);
+        continueToInputExplanation.SetActive(true);
         
         foreach (var gameObject in listToDisable)
         {
             gameObject.SetActive(false);
         }
+    }
+
+    public void StartGame()
+    {
+        continueToGame.SetActive(true);
+        spriteRendererMenu.sprite = intputExplanation;
+        continueToInputExplanation.SetActive(false);
     }
 
     public void Play()
