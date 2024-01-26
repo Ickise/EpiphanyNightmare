@@ -1,16 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class Menu : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRendererMenu;
 
     [SerializeField] private Sprite loreSprite;
+    
+    [SerializeField] private VideoPlayer videoPlayer;
 
     [SerializeField] private GameObject continueToGame;
 
-    [SerializeField] private GameObject[] listToDisable;
+    [SerializeField] private GameObject goToMenu;
 
+    [SerializeField] private GameObject[] listToDisable;
+    
     public void LoreExplanation()
     {
         spriteRendererMenu.sprite = loreSprite;
@@ -29,6 +34,15 @@ public class Menu : MonoBehaviour
 
     public void Credit()
     {
+        foreach (var gameObject in listToDisable)
+        {
+            gameObject.SetActive(false);
+        }
+        
+        goToMenu.SetActive(true);
+        spriteRendererMenu.sprite = null;
+        videoPlayer.gameObject.SetActive(true);
+        videoPlayer.Play();
     }
 
     public void Exit()
@@ -43,5 +57,10 @@ public class Menu : MonoBehaviour
     public void GoToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    private void ListToEnableOrDisable(GameObject[] listObjects, bool isEnable)
+    {
+       
     }
 }
